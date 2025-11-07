@@ -1,0 +1,5 @@
+{
+  "name": "Evangelio del día",
+  "description": "Una base de datos completa con las lecturas bíblicas diarias para el Año Litúrgico Católico Romano de Colombia (CEC), incluyendo los ciclos A, B, y C para domingos y solemnidades, y los ciclos I y II para ferias.",
+  "requestFramePermissions": []
+}

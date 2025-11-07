@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evangelio del día</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Acceda a las lecturas bíblicas diarias del Año Litúrgico Católico Romano según el calendario de la Conferencia Episcopal de Colombia (CEC). Contenido actualizado diariamente." />
+    <meta name="keywords" content="lecturas diarias, misal, evangelio de hoy, biblia, católico, liturgia, santa misa, ordo, CEC, Colombia, Lector Divino" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://televid.tv/santa-misa/" />
+    <meta property="og:title" content="Evangelio del día" />
+    <meta property="og:description" content="Lecturas bíblicas diarias del Año Litúrgico Católico Romano (CEC Colombia), actualizadas cada día." />
+    <meta property="og:image" content="https://images.pexels.com/photos/161172/bible-book-christianity-prayer-161172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://televid.tv/santa-misa/" />
+    <meta property="twitter:title" content="Evangelio del día" />
+    <meta property="twitter:description" content="Lecturas bíblicas diarias del Año Litúrgico Católico Romano (CEC Colombia), actualizadas cada día." />
+    <meta property="twitter:image" content="https://images.pexels.com/photos/161172/bible-book-christianity-prayer-161172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom scrollbar for better aesthetics */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+      /* Custom audio player styles */
+      .slider-progress {
+        --seek-before-width: 0%;
+        position: relative;
+        background: linear-gradient(to right, #3b82f6 var(--seek-before-width), #d1d5db calc(var(--seek-before-width) + 0.1%));
+      }
+      .dark .slider-progress {
+          background: linear-gradient(to right, #60a5fa var(--seek-before-width), #4b5563 calc(var(--seek-before-width) + 0.1%));
+      }
+      input[type="range"] {
+          -webkit-appearance: none;
+          appearance: none;
+          background: transparent;
+          cursor: pointer;
+      }
+      /* Refined Thumb Styles */
+      input[type="range"]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          height: 16px;
+          width: 16px;
+          background-color: #3b82f6;
+          border-radius: 50%;
+          border: 2px solid white;
+          box-shadow: 0 0 2px rgba(0,0,0,0.5);
+          margin-top: -7px;
+          transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+      }
+      input[type="range"]:hover::-webkit-slider-thumb {
+          transform: scale(1.1);
+      }
+      .dark input[type="range"]::-webkit-slider-thumb {
+          background-color: #60a5fa;
+          border-color: #1f2937;
+      }
+      input[type="range"]::-moz-range-thumb {
+          height: 16px;
+          width: 16px;
+          background-color: #3b82f6;
+          border-radius: 50%;
+          border: 2px solid white;
+          box-shadow: 0 0 2px rgba(0,0,0,0.5);
+          transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+      }
+      input[type="range"]:hover::-moz-range-thumb {
+          transform: scale(1.1);
+      }
+      .dark input[type="range"]::-moz-range-thumb {
+          background-color: #60a5fa;
+          border-color: #1f2937;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+  }
+}
+</script>
+</head>
+<body class="bg-transparent">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
